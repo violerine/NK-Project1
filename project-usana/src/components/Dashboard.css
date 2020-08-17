@@ -1,0 +1,392 @@
+
+@media only screen and (max-width: 576px) {
+    .about-content {
+        max-width: 90%;
+        left: 20px;
+     }
+     .main-video-text {
+         font-size: 20px !important
+     }
+
+    .jumbotron {
+         padding: 0rem !important
+     }
+
+    .main-video-title {
+        padding: 2.20rem;
+    }
+
+    .video-list {
+        width: 70%;
+     }
+
+    .video-content {
+        margin-bottom: 35px;
+    }
+
+    .youtube-video {
+        width: 100%; 
+        height: 250px;
+        margin-bottom: 35px;
+    }
+
+    .media-image {
+         width: 100%;
+         height: 330px;
+    }
+
+    .social-media-item {
+        top: 10%;
+    }
+    .social-media-title {
+        font-size: 23px;
+    }
+   
+    .social-media-content {
+        font-size: 22px;
+    }
+
+    .social-media-icon{
+        width: 17%;
+        height: 17%;
+    }
+    .contact-us-title {
+        font-size: 23px !important
+    }
+
+    .contact-us-item {
+        top: 20%;
+    }
+
+    .contact-us-content {
+        font-size: 20px !important
+    }
+    .download-title {
+        font-size: 23px !important
+    }
+    .download-button {
+        font-size: 20px;
+    }
+    .download-item {
+        top: 20%;
+    }
+
+    .footer-text {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 700px) {
+    .container {
+        max-width: 90% !important
+    }
+    .youtube-video {
+        width: 560px; 
+        height: 315px
+    }
+    
+    .media-image {
+        width: 130%;
+        height: 230px;
+    }
+
+    .social-media-item {
+        left: 10%;
+    }
+    .social-media-title {
+        font-size: 16px;
+    }
+    .social-media-content {
+        font-size: 15px;
+    }
+   
+    .contact-us-item {
+        top: 15%;
+        left: 7%;
+    }
+
+    .contact-us-title {
+        font-size: 16px !important
+    }
+
+    .contact-us-content {
+        font-size: 13px !important
+    }
+
+    .download-item {
+        top: 15%;
+        left: 10%;
+    }
+    .download-title {
+        font-size: 16px !important
+    }
+    .download-button {
+        font-size: 13px;
+    }
+    .container {
+        max-width: 80%;
+    }
+
+    .footer {
+        padding-top:30px ;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 992px) {
+    .container {
+        max-width: 85% !important
+    }
+    .youtube-video {
+        width: 560px; 
+        height: 315px
+    }
+    
+    .media-image {
+        width: 120%;
+        height: 250px;
+    }
+
+    .social-media-item {
+        top: 5%;
+        left: 9%;
+    }
+    .social-media-title {
+        font-size:18px !important
+    }
+    .social-media-content {
+        font-size: 17px !important
+    }
+   
+    .contact-us-item {
+        top: 10%;
+        left: 7%;
+    }
+    .social-media-icon{
+        width: 15%;
+        height: 15%;
+    }
+
+    .contact-us-title {
+        font-size: 18px !important
+    }
+
+    .contact-us-content {
+        font-size: 13px !important
+    }
+    .download-title {
+        font-size: 18px !important
+    }
+    .download-item {
+        left: 10%;
+        top: 10%;
+    }
+    .download-button {
+        font-size: 15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        max-width: 90% !important
+    }
+    .youtube-video {
+        width: 560px; 
+        height: 315px
+    }
+    
+    .media-image {
+        width: 120%;
+        height: 100%;
+    }
+    .social-media-title {
+        font-size: 24px;
+    }
+   
+    .social-media-content {
+        font-size: 22px;
+    }
+   
+    .download-item {
+        left: 8%;
+        font-size: 27px;
+        top: 50px !important
+    }
+
+    .social-media-item {
+        top: 20px;
+        left: 8%;
+    }
+
+    .contact-us-item {
+        top: 50px;
+        left: 7%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 80% !important
+    }
+    .media-image {
+        width: 120%;
+        height: 400px;
+    }
+
+    .img-fluid {
+        width: 120%;
+        height: 100%;
+    }
+    .youtube-video {
+        width: 560px; 
+        height: 315px
+    }
+
+    .social-media-item {
+        left: 8%;
+        top: 50px !important
+    }
+    .social-media-title {
+        font-size: 27px !important
+    }
+    .social-media-content {
+        font-size: 25px
+    }
+    .contact-us-item {
+        left: 7%;
+        top: 70px !important
+    }
+    .contact-us-title {
+        font-size: 27px !important
+    }
+    .contact-us-content {
+        font-size: 25px !important
+    }
+    .download-item {
+        left: 8%;
+        font-size: 27px;
+        top: 100px !important
+    }
+
+    .download-button {
+        font-size: 20px;
+    }
+
+
+}
+
+.dashboard{
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    text-align:center;
+    padding: 2.50rem;
+    margin-bottom: 0rem !important
+}
+.main-video-content {
+    background-color: #046cbc;
+}
+
+.main-video-text {
+    font-family: GothamBold;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.main-video-line {
+    border-top: 0.1px solid white;
+    opacity: 0.7;
+}
+
+.video-list-title{
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px 1px 10px;
+    background-color:#08a4ac;
+    color: white;
+    font-family: GothamBold;
+}
+
+.video-list-row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin-left: 15px; */
+}
+
+.yellow-text {
+    color: #f1d23a;
+    font-family: GothamBold;
+}
+.small-text {
+    color:white;
+    font-family: GothamLight;
+}
+
+.about-content {
+    position: absolute;
+    max-width: 90%;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: normal;
+    font-family: GothamBold;
+ }
+
+ .social-media-icon {
+     width: 17%;
+     height: 17%;
+     margin: 5px 5px 20px 5px;
+ }
+
+.btn {
+    color: #787c7e;
+    padding: 7px 30px 7px 30px;
+    border-radius: 30px !important
+}
+.contact-us-title {
+    font-size: 25px;
+}
+
+.contact-us-content{
+    font-size: 18px;
+    font-family: GothamMedium;
+}
+
+li {
+    color: rgb(255, 213, 0);
+}
+
+.video-content {
+    max-width: 600px;
+    max-height: 380px;
+}
+
+.footer {
+    padding-top:3%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: GothamMedium;
+}
+
+
+@font-face {
+    font-family: GothamBold;
+    src:url("../assets/Gotham-Bold.otf")
+}
+
+@font-face{
+    font-family: GothamLight;
+    src:url("../assets/Gotham-Light.otf")
+}
+
+@font-face{
+    font-family: GothamMedium;
+    src:url("../assets/Gotham-Medium.otf")
+}

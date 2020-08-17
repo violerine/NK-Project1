@@ -1,0 +1,89 @@
+
+@media only screen and (max-width: 576px) {
+    .modal {
+        text-align: center;
+        color: #2e60b6;
+        margin-top: 25% !important
+    }
+
+    .form-modal {
+        padding: 0 50px 0 50px !important
+    }
+}
+
+@media only screen and(min-width:576px) and (max-width: 1200px) {
+    .modal {
+        text-align: center;
+        color: #2e60b6;
+        margin-top: 30% !important
+    }
+}
+
+@media only screen and (min-height:1024px) {
+    .modal {
+        margin-top: 35% !important
+    }
+
+    .form-modal {
+        padding: 0 50px 0 50px !important
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.error-alert {
+    font-style: italic;
+    color: rgb(255, 89, 89);
+}
+
+.form-modal{
+    font-family: GothamMedium;
+    padding: 0 80px 0 80px;
+    margin: 0 0px 30px 0px;
+}
+.modal {
+    text-align: center;
+    color: #2e60b6;
+    margin-top: 10%;
+}
+
+.modal-content {
+    background-color:#e9eaeb;
+}
+.form-group {
+    font-family: GothamLight;
+}
+
+.btn {
+    background-color:  #8e8e8e;;
+    color: white;
+    padding: 0 35px 0 35px;
+    border-radius: 10px;
+    font-family: GothamLight;
+}
+
+.btn:disabled {
+    background-color: rgb(172, 172, 172);
+}
+
+.close {
+    color: #2e60b6;
+    font-size: 1.25rem;
+}
+
+.circle {
+    float: right;
+    border: 3px solid #2e60b6;
+    height: 30px;
+    border-radius:50%;
+    width: 30px;
+    margin: 10px;
+    opacity: 0.90;
+}
+
+.header {
+    float: right;
+}

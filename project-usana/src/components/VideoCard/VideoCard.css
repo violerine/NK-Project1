@@ -1,0 +1,51 @@
+@media only screen and (min-width: 576px) {
+    .video-text {
+        min-height: 65px;
+    }
+}
+
+.video-image{
+    width: 175px;
+    height: auto;
+}
+
+.video{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.video-text{
+   font-family: GothamMedium;
+   font-size: 11px;
+   margin-bottom: 0;
+}
+
+.card{
+    border: none !important;
+}
+
+.card-body {
+    padding: 0.55rem;
+}
+
+.btn{
+   background-color:rgba(150, 149, 149, 0.838);
+   border-radius: 30px;
+   font-size: 12px;
+   padding-right: 30px;
+   padding-left: 30px;
+   color: white;
+}
+
+@media only screen and (min-height:1024px) {
+    .btn {
+        margin-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px !important
+    }
+
+    .container {
+        max-width: 90% !important
+    }
+
+}
