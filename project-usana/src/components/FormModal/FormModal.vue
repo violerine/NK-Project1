@@ -43,18 +43,19 @@ export default {
             loading:false,
         }
     },
+    created(){
+        this.errorMessage = ""
+    },
     watch: {
         phone(value){
-            const validPhone = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
-                if(!value.match(validPhone)){
-                    this.errorMessage = "Please enter valid phone number e.g 08123456789"
-                }else {
-                    this.errorMessage = ""
-                }
+            if(value.length < 6){
+                this.errorMessage = "Please enter valid phone number e.g 08123456789"
+            }else {
+                this.errorMessage = ""
+            }
         },
         email(value){
-            const validEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
-            if(!value.match(validEmail)){
+            if(!value.includes('@')){
                 this.errorMessage = "Please enter valid email e.g name@mail.com"
             }else {
                  this.errorMessage = ""
@@ -66,12 +67,9 @@ export default {
             this.loading = true;
             const completedField = this.email.length && this.fullname.length && this.phone
             if(this.errorMessage == "" && completedField){
-                console.log("valid")
                 window.Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "elbokusnadimailsender@gmail.com",
-                    Password : "trinity#123",
-                    To : 'gladysefirina@gmail.com',
+                    SecureToken:"6f5bf539-37fe-42e5-9a60-27a72bc0ee69",
+                    To : 'k.nelvin@hotmail.com', 
                     From : "elbokusnadimailsender@gmail.com",
                     Subject : `From: ${this.fullname}`,
                     Body : `
@@ -79,13 +77,18 @@ export default {
                         Phone: ${this.phone} 
                         Email: ${this.email} 
                     `
-                    }).then(() => {    
+                    }).then((val) => {    
                         this.loading = false
-                        localStorage.setItem('user-usana', this.email)
-                        window.location.reload()
-                    });
+                        if(val !== "OK"){
+                            alert("Mohon maaf terjadi kesalahan pada server kami")
+                        }else {
+                            localStorage.setItem('user-usana', this.email)
+                            window.location.reload()
+                            window.scrollTo(0,350);
+                        }
+
+                    })
              }
-            console.log("ke click ga", this.fullname, this.phone, this.email)
 
         },
     }

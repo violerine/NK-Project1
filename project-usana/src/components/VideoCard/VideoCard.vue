@@ -3,7 +3,7 @@
       <img class="card-img-top" v-bind:src="require('../../assets/' + videoData.image)">
       <div class="card-body">
         <p class="card-text video-text">{{videoData.caption}}</p>
-          <button v-if="!getUser" @click="emitVideoLink(videoData.id)" type="button watch-now" class="btn" data-toggle="modal" data-target="#exampleModal">
+          <button v-if="!getUser" type="button watch-now" class="btn" data-toggle="modal" data-target="#exampleModal">
               Watch Now
           </button>
           <button v-else class="btn" @click="emitVideoLink(videoData.id)" type="button watch-now">
@@ -26,6 +26,7 @@ export default {
   methods:{
     emitVideoLink(value){
       this.$emit('videochange',value)
+      window.scrollTo(0,350);
     }
   }
 }

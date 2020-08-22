@@ -10,11 +10,9 @@
         <hr class="main-video-line">
         <p class="small-text">How would you like to join <span class="yellow-text">FREE HOME BASED BUSINESS TRAINING</span> to get <span class="yellow-text">UNLIMITED</span> income opportunity?</p>
       </div>
-      <!-- <div  v-if="isYoutube(introVideo.videoSrc)" class="youtube-video embed-responsive embed-responsive-16by9 video-content justify-content-center"> -->
-        <iframe class="youtube-video"  v-if="isYoutube(introVideo.videoSrc)" src="https://www.youtube.com/embed/6JL6GadTVuE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- </div> -->
-      <video v-else :key="introVideo.id" width="100%" height="100%" class="video-content" controls controlsList="nodownload">
-          <source :src="introVideo.videoSrc" type="video/mp4">
+      <iframe class="youtube-video"  v-if="isYoutube(mainVideo.videoSrc)" :src="mainVideo.videoSrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <video v-else :key="mainVideo.id" width="100%" height="100%" class="video-content" controls controlsList="nodownload">
+          <source :src="mainVideo.videoSrc" type="video/mp4">
       </video>
     </div>
     <!-- VIDEO LIST -->
@@ -51,11 +49,11 @@
             <li>Business Strategies</li>
           </div>
           <span>
-            <a href="https://www.instagram.com/nelvinkusnadi/?hl=id" target="_blank">
-              <img class="social-media-icon" src="../assets/SocialMedia-01.png">
+            <a href="https://www.facebook.com/groups/265218818066523/?ref=bookmarks" target="_blank">
+              <img class="social-media-icon" src="../assets/SocialMedia-03.png">
             </a>
-            <a href="https://wa.me/+628118113456" target="_blank">
-              <img class="social-media-icon" src="../assets/SocialMedia-02.png">
+            <a href="https://www.youtube.com/user/nkusnadi" target="_blank">
+              <img class="social-media-icon" src="../assets/SocialMedia-04.png" >
             </a>
           </span>
         </div>
@@ -66,11 +64,11 @@
           <p class="contact-us-title">CONTACT US</p>
           <p class="contact-us-content">For more information, please contact us through whatsapp or instagram</p>
           <span>
-            <a href="https://www.facebook.com/groups/265218818066523/?ref=bookmarks" target="_blank">
-            <img class="social-media-icon" src="../assets/SocialMedia-03.png">
+            <a href="https://www.instagram.com/nelvinkusnadi/?hl=id" target="_blank">
+              <img class="social-media-icon" src="../assets/SocialMedia-01.png">
             </a>
-            <a href="https://www.youtube.com/user/nkusnadi" target="_blank">
-            <img class="social-media-icon" src="../assets/SocialMedia-04.png" >
+            <a href="https://wa.me/+628118113456" target="_blank">
+              <img class="social-media-icon" src="../assets/SocialMedia-02.png">
             </a>
           </span>
         </div>
@@ -101,19 +99,30 @@ export default {
   },
   data(){
     return {
-      currentVideo:"",
-      introVideo: {videoSrc: require('../assets/Videos/INTRO.mp4'), id:10},
+      mainVideo: {videoSrc: require('../assets/Videos/INTRO.mp4'), id:10},
+      // videos1:[
+      //     {id:0, videoSrc: require('../assets/Videos/2020.05.25 - 01. DFW welcome video (720).mp4'), caption:"Di video ini menceritakan siapa saya dan mengapa bisnis yang saya jalankan sangat bermanfaat untuk anda.", image:'01.png'},
+      //     {id:1, videoSrc: require('../assets/Videos/2020.05.29 - 02. USANA Product & Business Presentation (720).mp4'), caption:"Di video ini saya menjelaskan secara detail bagaimana Usana company berbeda dari company lainnya.", image:'02.png'},
+      //     {id:2, videoSrc: "https://youtu.be/6JL6GadTVuE", caption:"Di video ini menjelaskan kompensasi plan Usana secara detail dan seberapa besar potensi income untuk anda.", image:'03.png'},
+      //     {id:3, videoSrc: require('../assets/Videos/2020.08.10 - 07. USANA Products.mp4'), caption:"Di video ini menjelaskan manfaat, kelebihan dan siapa saja yang dapat konsumsi product supplement Usana.", image:'04.png'},
+      // ],
+      // videos2:[
+      //     {id:4, videoSrc: require('../assets/Videos/2020.08.04 - 04. USANA Skin Care Celavive_1.mp4'), caption:"Di video ini akan dijelaskan secara singkat tentang jenis dan kelebihan produk skin care Usana.", image:'05.png'},
+      //     {id:5, videoSrc: require('../assets/Videos/2020.08.10 - 08. USANA Facilities Tour.mp4'), caption:"Di video ini menjelaskan bagaimana cara Usana memproduksi produknya.", image:'06.png'},
+      //     {id:6, videoSrc: require('../assets/Videos/2020.08.10 - 05. How to Handle Objection.mp4'), caption:"Di video ini, saya memberikan contoh-contoh penolakan dan bagaimana strategi untuk menanganinya.", image:'07.png'},
+      //     {id:7, videoSrc: require('../assets/Videos/2020.08.10 - 06. How to start USANA business.mp4'), caption:"Di video ini, saya menjelaskan step by step dan strategi bagaimana memulai bisnis Usana anda", image:'08.png'},
+      // ],
       videos1:[
-          {id:0, videoSrc: require('../assets/Videos/2020.05.25 - 01. DFW welcome video (720).mp4'), caption:"Di video ini menceritakan siapa saya dan mengapa bisnis yang saya jalankan sangat bermanfaat untuk anda.", image:'01.png'},
-          {id:1, videoSrc: require('../assets/Videos/2020.05.29 - 02. USANA Product & Business Presentation (720).mp4'), caption:"Di video ini saya menjelaskan secara detail bagaimana Usana company berbeda dari company lainnya.", image:'02.png'},
-          {id:2, videoSrc: require('../assets/Videos/2020.05.25 - 01. DFW welcome video (720).mp4'), caption:"Di video ini menjelaskan kompensasi plan Usana secara detail dan seberapa besar potensi income untuk anda.", image:'03.png'},
-          {id:3, videoSrc: "https://youtu.be/6JL6GadTVuE", caption:"Di video ini menjelaskan manfaat, kelebihan dan siapa saja yang dapat konsumsi product supplement Usana.", image:'04.png'},
+          {id:0, videoSrc: "https://www.youtube.com/embed/8hY66l1NqZM", caption:"Di video ini menceritakan siapa saya dan mengapa bisnis yang saya jalankan sangat bermanfaat untuk anda.", image:'01.png'},
+          {id:1, videoSrc: "https://www.youtube.com/embed/cRgatYKXMcs?rel=0", caption:"Di video ini saya menjelaskan secara detail bagaimana Usana company berbeda dari company lainnya.", image:'02.png'},
+          {id:2, videoSrc: "https://www.youtube.com/embed/6JL6GadTVuE?rel=0", caption:"Di video ini menjelaskan kompensasi plan Usana secara detail dan seberapa besar potensi income untuk anda.", image:'03.png'},
+          {id:3, videoSrc: "https://www.youtube.com/embed/AinK7TY8l5Y?rel=0", caption:"Di video ini menjelaskan manfaat, kelebihan dan siapa saja yang dapat konsumsi product supplement Usana.", image:'04.png'},
       ],
       videos2:[
-          {id:4, videoSrc: require('../assets/Videos/2020.08.10 - 05. How to Handle Objection.mp4'), caption:"Di video ini akan dijelaskan secara singkat tentang jenis dan kelebihan produk skin care Usana.", image:'05.png'},
-          {id:5, videoSrc: require('../assets/Videos/2020.08.10 - 06. How to start USANA business.mp4'), caption:"Di video ini menjelaskan bagaimana cara Usana memproduksi produknya.", image:'06.png'},
-          {id:6, videoSrc: require('../assets/Videos/2020.08.10 - 07. USANA Products.mp4'), caption:"Di video ini, saya memberikan contoh-contoh penolakan dan bagaimana strategi untuk menanganinya.", image:'07.png'},
-          {id:7, videoSrc: require('../assets/Videos/2020.08.10 - 08. USANA Facilities Tour.mp4'), caption:"Di video ini, saya menjelaskan step by step dan strategi bagaimana memulai bisnis Usana anda", image:'08.png'},
+          {id:4, videoSrc: "https://www.youtube.com/embed/g2nM9uaO_C4?rel=0", caption:"Di video ini akan dijelaskan secara singkat tentang jenis dan kelebihan produk skin care Usana.", image:'05.png'},
+          {id:5, videoSrc: require('../assets/Videos/2020.08.10 - 08. USANA Facilities Tour.mp4'), caption:"Di video ini menjelaskan bagaimana cara Usana memproduksi produknya.", image:'06.png'},
+          {id:6, videoSrc: "https://www.youtube.com/embed/cyBhnti_nr0?rel=0", caption:"Di video ini, saya memberikan contoh-contoh penolakan dan bagaimana strategi untuk menanganinya.", image:'07.png'},
+          {id:7, videoSrc: "https://www.youtube.com/embed/b8MdHYjY50w?rel=0", caption:"Di video ini, saya menjelaskan step by step dan strategi bagaimana memulai bisnis Usana anda", image:'08.png'},
       ],
       showModal: false,
       screensize: window.innerWidth,
@@ -131,7 +140,7 @@ export default {
 
   methods:{
     isYoutube(src){
-      if(src.includes("youtu")){
+      if(src.includes("youtube")){
         return true
       } else{
         false
@@ -140,10 +149,10 @@ export default {
     onVideoChange(value){
       if(value > 3){
         value = value-4
-        this.introVideo = this.videos2[value]
+        this.mainVideo = this.videos2[value]
         this.ytVideo = false
       }else {
-        this.introVideo = this.videos1[value]
+        this.mainVideo = this.videos1[value]
       }
 
     },
