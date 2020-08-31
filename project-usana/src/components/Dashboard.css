@@ -74,11 +74,6 @@
     .footer-text {
         padding: 10px;
     }
-
-    .video-content {
-        max-width: 600px;
-        max-height: 380px;
-    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 700px) {
@@ -88,10 +83,6 @@
     .youtube-video {
         width: 560px; 
         height: 315px
-    }
-    .video-content {
-        max-width: 600px;
-        max-height: 380px;
     }
     
     .media-image {
@@ -150,10 +141,6 @@
         width: 560px; 
         height: 315px
     }
-    .video-content {
-        max-width: 600px;
-        max-height: 380px;
-    }
     
     .media-image {
         width: 120%;
@@ -209,10 +196,6 @@
         width: 560px; 
         height: 315px
     }
-    .video-content {
-        max-width: 600px;
-        max-height: 380px;
-    }
     
     .media-image {
         width: 120%;
@@ -248,16 +231,9 @@
     .container {
         max-width: 80% !important
     }
-    .main-video-text {
-        font-size: 40px !important
-    }
-
-    .small-text {
-        font-size:30px !important
-    }
     .media-image {
         width: 120%;
-        height: 580px;
+        height: 400px;
     }
 
     .img-fluid {
@@ -265,37 +241,33 @@
         height: 100%;
     }
     .youtube-video {
-        width: 860px; 
-        height: 515px
-    }
-    .video-content{
-        width: 860px; 
-        height: 515px
+        width: 560px; 
+        height: 315px
     }
 
     .social-media-item {
         left: 8%;
-        top: 80px !important
+        top: 50px !important
     }
     .social-media-title {
-        font-size: 40px !important
+        font-size: 27px !important
     }
     .social-media-content {
-        font-size: 35px
+        font-size: 25px
     }
     .contact-us-item {
         left: 7%;
         top: 70px !important
     }
     .contact-us-title {
-        font-size: 40px !important
+        font-size: 27px !important
     }
     .contact-us-content {
-        font-size: 35px !important
+        font-size: 25px !important
     }
     .download-item {
         left: 8%;
-        font-size: 40px;
+        font-size: 27px;
         top: 100px !important
     }
 
@@ -389,7 +361,10 @@ li {
     color: rgb(255, 213, 0);
 }
 
-
+.video-content {
+    max-width: 600px;
+    max-height: 380px;
+}
 
 .footer {
     padding-top:3%;
